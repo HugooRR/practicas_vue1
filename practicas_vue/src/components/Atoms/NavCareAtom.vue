@@ -23,7 +23,7 @@ defineProps({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .nav_care {
   border: 1px solid lightgrey;
   width: 100%;

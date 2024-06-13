@@ -1,11 +1,11 @@
 <template lang="html">
-  <DivsEncabezadoAtom className="title" image="./images/warnings-off2.png" imgAlt="Warnings" imgClass="img_title" text="ALERTS Y MESSAGES" :isParagraph="false" />
+  <CommonDivAtom className="title" image="/src/images/warnings-off2.png" imgAlt="Warnings" imgClass="img_title" text="ALERTS Y MESSAGES" :isParagraph="false" />
   <div class="alerts_messaging">
     <ContainerMessageMolecule />
   </div>
 </template>
 <script lang="ts" setup>
-import { ContainerMessageMolecule, DivsEncabezadoAtom } from "../index"
+import { ContainerMessageMolecule, CommonDivAtom } from "../index"
 </script>
 <style lang="scss" scoped>
 .title {
@@ -42,7 +42,25 @@ import { ContainerMessageMolecule, DivsEncabezadoAtom } from "../index"
     }
   }
 }
-
+.new_msg {
+  background-image: url(//src/images/Rectangle\ 2.png);
+  color: white;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+}
+.sent_msg {
+  background-color: lightgrey;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+}
+.previous_msg {
+  background-color: lightgrey;
+  padding-left: 10px;
+}
 .alerts_messaging {
   margin-top: 30px;
   margin-bottom: 50px;

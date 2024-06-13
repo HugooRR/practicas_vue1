@@ -1,14 +1,14 @@
 <template lang="html">
   <div class="container_calendar">
-    <RemindersAtom />
+    <RemindersMolecule />
     <CalendarAtom />
   </div>
 </template>
 <script lang="ts" setup>
-import { CalendarAtom, RemindersAtom } from "../index.ts"
+import { CalendarAtom, RemindersMolecule } from "../index.ts"
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .container_calendar {
   border: 1px solid lightgrey;
   margin: 20px 100px;

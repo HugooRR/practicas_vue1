@@ -1,5 +1,5 @@
 <template lang="html">
-  <img src="./images/logo-easy-connect_SBS.png" alt="Logo" class="logo" />
+  <img src="/src/images/logo-easy-connect_SBS.png" alt="Logo" class="logo" />
   <HeaderRightMolecule />
 </template>
 
@@ -7,7 +7,7 @@
 import { HeaderRightMolecule } from "../index.ts"
 </script>
 
-<style lang="css" scoped>
+<style lang="css" >
 header {
   display: flex;
   flex-direction: row;

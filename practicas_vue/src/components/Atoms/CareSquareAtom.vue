@@ -37,7 +37,7 @@ defineProps({
   },
 })
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 .care_square {
   background-color: white;
   border: 1px solid lightgrey;
@@ -87,7 +87,7 @@ defineProps({
 
   .send_msg {
     display: flex;
-    background-image: url(./images/Rectangle\ 2.png);
+    background-image: url("/src/images/Rectangle 2.png");
     color: white;
     width: fit-content;
     height: 15%;

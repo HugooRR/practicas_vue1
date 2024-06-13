@@ -1,6 +1,6 @@
 <template lang="html">
-  <div class="rectangulo">
-    <img src="./images/Rectangle 1.png" alt="Rectangle" class="img_rectangle" />
+  <div class="rectangle">
+    <img src="/src/images/Rectangle 1.png" alt="Rectangle" class="img_rectangle" />
     <CardsAtom :itemSrc="itemSrc" :circleNumber="circleNumber" :title="title" />
   </div>
 </template>
@@ -15,7 +15,7 @@ defineProps({
     requied: true,
   },
   circleNumber: {
-    type: String,
+    type: Number,
   },
   title: {
     type: String,
@@ -24,7 +24,7 @@ defineProps({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" >
 .rectangle {
   max-height: 100%;
   max-width: 100%;

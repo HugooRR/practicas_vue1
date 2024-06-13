@@ -14,6 +14,10 @@
     "noEmit": true,
     "jsx": "preserve",
 
+    "allowJs": true, // Permite compilar archivos JavaScript
+    "sourceMap": true, // Genera mapas de origen
+    "esModuleInterop": true,
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

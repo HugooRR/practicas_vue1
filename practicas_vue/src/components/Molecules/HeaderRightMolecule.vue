@@ -1,21 +1,21 @@
 <template lang="html">
   <div class="header_right">
-    <img src="./images/senior.png" alt="Woman image" class="client" />
-    <DivAtom className="ellipse" image="./images/Ellipse 1.png" imgAlt="Notifications" text="6" :isParagraph="true" />
+    <img src="/src/images/senior.png" alt="Woman image" class="client" />
+    <CommonDivAtom className="ellipse" image="/src/images/Ellipse 1.png" imgAlt="Notifications" text="6" :isParagraph="true" />
 
     <div class="client_name">Cordelia Carpanter</div>
 
-    <DivAtom className="settings" image="./images/config.png" imgAlt="Configuration" imgClass="config" text="SETTINGS" :isParagraph="false" />
+    <CommonDivAtom className="settings" image="/src/images/config.png" imgAlt="Configuration" imgClass="config" text="SETTINGS" :isParagraph="false" />
 
-    <DivAtom className="logout" image="./images/1419365876_on-off.png" imgAlt="Logout" imgClass="on_off" text="LOGOUT" :isParagraph="false" />
+    <CommonDivAtom className="logout" image="/src/images/1419365876_on-off.png" imgAlt="Logout" imgClass="on_off" text="LOGOUT" :isParagraph="false" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { DivAtom } from "../index.ts"
+import { CommonDivAtom } from "../index.ts"
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .header_right {
   width: 500px;
   display: flex;

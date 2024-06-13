@@ -1,11 +1,11 @@
-<template lang="html">
+<template>
   <div class="calendar">
     <div class="nav_calendar">
-      <div class="arrow_left"><img src="./images/mail_arrow.png" alt="Calendar arrow left" class="arrow_closed" id="arrow_left" /></div>
+      <div class="arrow_left"><img src="/src/images/mail_arrow.png" alt="Calendar arrow left" class="arrow_closed" id="arrow_left" /></div>
       <div class="date">
-        <h1>JULY 2014</h1>
+        <h1>APRIL 2024</h1>
       </div>
-      <div class="arrow_right"><img src="./images/mail_arrow.png" alt="Calendar arrow right" class="arrow_closed" /></div>
+      <div class="arrow_right"><img src="/src/images/mail_arrow.png" alt="Calendar arrow right" class="arrow_closed" /></div>
     </div>
     <table class="table_calendar">
       <thead>
@@ -70,7 +70,10 @@
   </div>
 </template>
 <script lang="ts" setup></script>
-<style lang="scss" scoped>
+<style lang="scss" >
+.calendar {
+  width: 50%;
+}
 .nav_calendar {
   display: flex;
   flex-direction: row;
@@ -78,23 +81,31 @@
   align-items: center;
   margin-bottom: 34px;
 }
-
+.date {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 #arrow_left {
   rotate: 90deg;
 }
-
 .arrow_left {
   margin-right: auto;
 }
-
 .arrow_right {
   margin-left: auto;
 }
-
-.calendar {
-  width: 50%;
+.arrow_closed {
+  rotate: -90deg;
+  height: 5px;
 }
-
 .table_calendar {
   width: 100%;
   height: 87%;
@@ -102,53 +113,26 @@
   text-align: center;
   border-collapse: collapse;
   font-size: larger;
-}
-
-.table_calendar > tr {
-  height: 0;
-}
-
-.table_calendar > thead {
-  background-color: rgb(1, 209, 216);
-  height: 10%;
-}
-
-.date_current,
-.date_day {
-  background-image: url(./images/Ellipse\ 1.png);
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position-x: center;
-  background-position-y: center;
-  color: white;
-  font-weight: 900;
-}
-
-.date_day {
-  opacity: 0.7;
-  font-weight: 100;
-}
-
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  .calendar {
-    width: 100%;
+  tr {
+    height: 0;
   }
-
-  .nav_calendar {
-    margin-bottom: 10px;
+  thead {
+    background-color: rgb(1, 209, 216);
+    height: 10%;
   }
-
-  .table_calendar > thead {
-    height: 30px;
-  }
-
-  .table_calendar > tbody {
-    height: 300px;
-  }
-
   .date_current,
   .date_day {
-    background-size: 50%;
+    background-image: url("/src/images/Ellipse 1.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x: center;
+    background-position-y: center;
+    color: white;
+    font-weight: 900;
+  }
+  .date_day {
+    opacity: 0.7;
+    font-weight: 100;
   }
 }
 </style>

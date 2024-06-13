@@ -1,26 +1,26 @@
 <template lang="html">
   <div class="container">
-    <RectangleCardMolecule v-for="(item, index) in cardItems" :key="index" :itemSrc="item.itemSrc" :circleNumber="item.circleNumber" :title="item.title" />
+    <RectangleCardMolecule v-for="(item, index) in cardItems" :key="index" :itemSrc="item.itemSrc" :circleNumber ="item.circleNumber" :title="item.title" />
   </div>
 </template>
 <script lang="ts" setup>
 import { RectangleCardMolecule } from "../index"
 interface CardItem {
   itemSrc: string
-  circleNumber?: string
+  circleNumber?: number
   title: string
 }
 const cardItems: CardItem[] = [
-  { itemSrc: "./images/warnings-off2.png", circleNumber: "2", title: "ALERTS AND MESSAGING" },
-  { itemSrc: "./images/reminders-calendar.png", circleNumber: "1", title: "REMINDERS CALENDAR" },
-  { itemSrc: "./images/ties2.png", circleNumber: "2", title: "CIRCLE OF CARE" },
-  { itemSrc: "./images/daily-care-o-gram.png", circleNumber: "1", title: "DAILY CARE-O-GRAM" },
-  { itemSrc: "./images/casemanager.png", title: "REPOSITORY" },
-  { itemSrc: "./images/my-health-reports.png", title: "REPORTS" },
-  { itemSrc: "./images/reward-points.png", title: "MY POINTS" },
+  { itemSrc: "/src/images/warnings-off2.png", circleNumber: 2, title: "ALERTS AND MESSAGING" },
+  { itemSrc: "/src/images/reminders-calendar.png", circleNumber: 1, title: "REMINDERS CALENDAR" },
+  { itemSrc: "/src/images/ties2.png", circleNumber: 2, title: "CIRCLE OF CARE" },
+  { itemSrc: "/src/images/daily-care-o-gram.png", circleNumber: 1, title: "DAILY CARE-O-GRAM" },
+  { itemSrc: "/src/images/casemanager.png", title: "REPOSITORY" },
+  { itemSrc: "/src/images/my-health-reports.png", title: "REPORTS" },
+  { itemSrc: "/src/images/reward-points.png", title: "MY POINTS" },
 ]
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 main {
   display: flex;
   justify-content: center;

@@ -24,32 +24,20 @@
 
 <script setup lang="ts">
 import { CareSquareAtom, NavCareAtom } from "../index"
+import { NavItemInfo ,NavItem} from "../../types/NavItem"
+import { CareInfo, CareItem } from "../../types/CareItem";
 
-interface NavItem {
-  text: string
-  divClassName?: string
-  id?: string
-}
-
-interface CareItem {
-  className: string
-  imgSrc: string
-  altText: string
-  name: string
-  profession: string
-}
-
-const navItems: NavItem[] = [{ text: "FIND" }, { text: "MY CIRCLE OF CARE", divClassName: "bottom_bar" }, { text: "PENDING", divClassName: "ellipse_pending", id: "pending" }]
+const navItems: NavItem[] = [{ text: NavItemInfo.findText }, { text: NavItemInfo.circleText , divClassName: NavItemInfo.circleDivClass }, { text: "PENDING", divClassName: NavItemInfo.pendingDivClass, id: NavItemInfo.pendingId}]
 
 const careItems: CareItem[] = [
-  { className: "red_bar", imgSrc: "/src/images/francis.png", altText: "Man picture", name: "Francis Fisher Williams", profession: "Graphic Designer" },
-  { className: "blue_bar", imgSrc: "/src/images/marie.png", altText: "Woman picture", name: "Marie Kraft Smith", profession: "Doctor" },
-  { className: "red_bar", imgSrc: "/src/images/dolores.png", altText: "Woman picture", name: "Dolores Vidal Taylor", profession: "Commercial" },
-  { className: "red_bar", imgSrc: "/src/images/robbie.png", altText: "Man picture", name: "Robbie Walker Jr.", profession: "CEO NY Memorial" },
-  { className: "blue_bar", imgSrc: "/src/images/vanessa.png", altText: "Woman picture", name: "Vanessa Herrera Simons", profession: "Nurse" },
+  { className: CareInfo.redBar, imgSrc: "/src/images/francis.png", altText: CareInfo.manPic, name: "Francis Fisher Williams", profession: CareInfo.graphicD },
+  { className: CareInfo.blueBar, imgSrc: "/src/images/marie.png", altText: CareInfo.womanPic, name: "Marie Kraft Smith", profession: CareInfo.dc },
+  { className: CareInfo.redBar, imgSrc: "/src/images/dolores.png", altText: CareInfo.womanPic, name: "Dolores Vidal Taylor", profession: CareInfo.comercial },
+  { className: CareInfo.redBar, imgSrc: "/src/images/robbie.png", altText: CareInfo.manPic, name: "Robbie Walker Jr.", profession: CareInfo.ceo },
+  { className: CareInfo.blueBar, imgSrc: "/src/images/vanessa.png", altText: CareInfo.womanPic, name: "Vanessa Herrera Simons", profession: CareInfo.nurse },
 ]
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .circle {
   display: flex;
   justify-content: center;

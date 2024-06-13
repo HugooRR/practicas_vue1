@@ -3,10 +3,10 @@
     <tbody>
       <tr class="tr_mail">
         <td class="td_check"><input type="checkbox" name="check_1" id="check_1" /></td>
-        <td class="td_sender"><img src="./images/Ellipse 1.png" alt="Ellipse" class="ellipse_mail" />John Snow</td>
+        <td class="td_sender"><img src="/src/images/Ellipse 1.png" alt="Ellipse" class="ellipse_mail" />John Snow</td>
         <td class="td_subject">Hi Friend!!</td>
         <td class="td_date">12 April 2014</td>
-        <td class="td_arrow"><img src="./images/mail_arrow.png" alt="Mail arrow" class="arrow_opened" /></td>
+        <td class="td_arrow"><img src="/src/images/mail_arrow.png" alt="Mail arrow" class="arrow_opened" /></td>
       </tr>
       <tr class="tr_mail">
         <td colspan="5" class="opened_mail">
@@ -24,31 +24,31 @@
       </tr>
       <tr class="tr_mail">
         <td class="td_check"><input type="checkbox" name="check_2" id="check_2" /></td>
-        <td class="td_sender"><img src="./images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Richard Channing</td>
+        <td class="td_sender"><img src="/src/images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Richard Channing</td>
         <td class="td_subject">Memorial Clinic</td>
         <td class="td_date">12 April 2014</td>
-        <td class="td_arrow"><img src="./images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
+        <td class="td_arrow"><img src="/src/images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
       </tr>
       <tr class="tr_mail">
         <td class="td_check"><input type="checkbox" name="check_3" id="check_3" /></td>
-        <td class="td_sender"><img src="./images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Elisabeth Bale</td>
+        <td class="td_sender"><img src="/src/images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Elisabeth Bale</td>
         <td class="td_subject">From Connecticut</td>
         <td class="td_date">21 June 2013</td>
-        <td class="td_arrow"><img src="./images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
+        <td class="td_arrow"><img src="/src/images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
       </tr>
       <tr class="tr_mail">
         <td class="td_check"><input type="checkbox" name="check_4" id="check_4" /></td>
-        <td class="td_sender"><img src="./images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Sarah Connor</td>
+        <td class="td_sender"><img src="/src/images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Sarah Connor</td>
         <td class="td_subject">Cyberdyne Systems</td>
         <td class="td_date">20 June 2013</td>
-        <td class="td_arrow"><img src="./images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
+        <td class="td_arrow"><img src="/src/images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
       </tr>
       <tr class="tr_mail">
         <td class="td_check"><input type="checkbox" name="check_5" id="check_5" /></td>
-        <td class="td_sender"><img src="./images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Arturo González</td>
+        <td class="td_sender"><img src="/src/images/grey_ellipse.png" alt="Grey ellipse" class="grey_ellipse" />Arturo González</td>
         <td class="td_subject">Recordatorio Consulta</td>
         <td class="td_date">20 June 2013</td>
-        <td class="td_arrow"><img src="./images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
+        <td class="td_arrow"><img src="/src/images/mail_arrow.png" alt="Mail arrow" class="arrow_closed" /></td>
       </tr>
       <tr class="tr_mail" id="span3">
         <td colspan="3"></td>
@@ -63,7 +63,7 @@
 </template>
 
 <script lang="ts" setup></script>
-<style lang="scss" scoped>
+<style lang="scss" >
 .table_mail,
 .tr_mail {
   border: 1px solid lightgrey;
@@ -127,7 +127,7 @@ p {
   cursor: pointer;
 }
 .btn_delete {
-  background-image: url(./images/Rectangle\ 2.png);
+  background-image: url(/src/images/Rectangle\ 2.png);
   border: none;
   color: white;
   font-weight: bold;
@@ -137,25 +137,7 @@ p {
   margin: 4px 2px;
   cursor: pointer;
 }
-.new_msg {
-  background-image: url(./images/Rectangle\ 2.png);
-  color: white;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  padding: 0px 15px 0px 15px;
-}
-.sent_msg {
-  background-color: lightgrey;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  padding: 0px 15px 0px 15px;
-}
-.previous_msg {
-  background-color: lightgrey;
-  padding-left: 10px;
-}
+
 #span2 {
   visibility: hidden;
   border: 1px solid transparent;

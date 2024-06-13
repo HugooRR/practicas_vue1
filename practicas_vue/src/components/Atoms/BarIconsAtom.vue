@@ -1,11 +1,11 @@
-<template >
+<template>
   <div class="bar_icons">
-    <img src="./images/square.png" alt="Square view" class="square" />
-    <img src="./images/list.png" alt="List view" class="list" />
+    <img src="/src/images/square.png" alt="Square view" class="square" />
+    <img src="/src/images/list.png" alt="List view" class="list" />
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .bar_icons {
   visibility: hidden;
 

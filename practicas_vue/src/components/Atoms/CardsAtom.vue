@@ -1,12 +1,12 @@
 <template lang="html">
   <div class="card">
-    <img src="./images/Layer 2.png" alt="Layer" class="layer" />
+    <img src="/src/images/Layer 2.png" alt="Layer" class="layer" />
     <img :src="itemSrc" alt="Warnings" class="img_item" />
-    <div v-if="circleNumber !== undefined && circleNumber !== null && circleNumber.toString() !== ''" class="circle_test">
-      {{ circleNumber }}
-    </div>
+    <template v-if="circleNumber !== undefined && circleNumber !== null && circleNumber.toString() !== ''"class="circle_test">
+      <div class="circle_test">{{ circleNumber }}</div>
+    </template>
     <div>{{ title }}</div>
-    <img src="./images/Layer 3.png" alt="Layer bottom" class="layer_bottom" />
+    <img src="/src/images/Layer 3.png" alt="Layer bottom" class="layer_bottom" />
     <div v-if="showDiv" class="total_points"></div>
   </div>
 </template>
@@ -20,7 +20,7 @@ defineProps({
     requied: true,
   },
   circleNumber: {
-    type: String,
+    type: Number,
     requied: true,
   },
   title: {

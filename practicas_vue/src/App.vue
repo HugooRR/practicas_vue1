@@ -1,7 +1,9 @@
 <script setup>
-import {oHeader} from 'vue'
+import CordeliaPage from './components/Pages/CordeliaPage.vue';
 </script>
 
 <template>
-  <div>Hello World</div>
+  <div>
+    <CordeliaPage />
+  </div>
 </template>

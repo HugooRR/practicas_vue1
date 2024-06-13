@@ -1,15 +1,15 @@
 <template lang="html">
-  <DivAtom className="title" image="./images/ties2.png" imgAlt="Ties" imgClass="img_title" text="CIRCLE OF CARE" :isParagraph="false" />
+  <CommonDivAtom className="title" image="/src/images/reminders-calendar.png" imgAlt="Calendar" imgClass="img_title" text="REMINDERS CALENDAR" :isParagraph="false" :rightImg="true"/>
+
   <div class="raminders_calendar">
     <ContainerCalendarMolecule />
   </div>
-  <img src="./images/Titular barra.png" alt="Title bar" class="bar" />
   <BarIconsAtom />
 </template>
 <script lang="ts" setup>
-import { DivAtom, BarIconsAtom, ContainerCalendarMolecule } from "../index.ts"
+import { CommonDivAtom, BarIconsAtom, ContainerCalendarMolecule } from "../index.ts"
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 .title {
   height: 50px;
   background-color: lightgray;
@@ -44,18 +44,6 @@ import { DivAtom, BarIconsAtom, ContainerCalendarMolecule } from "../index.ts"
 
   @media screen and (min-width: 640px) and (max-width: 1024px) {
     height: 40px;
-  }
-}
-
-.bar {
-  margin-left: auto;
-
-  @media screen and (min-width: 320px) and (max-width: 640px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 640px) and (max-width: 1024px) {
-    height: 15px;
   }
 }
 

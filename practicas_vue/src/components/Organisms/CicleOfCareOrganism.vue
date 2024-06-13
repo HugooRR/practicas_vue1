@@ -1,11 +1,11 @@
 <template lang="html">
   <section>
-    <DivAtom className="title" image="./images/ties2.png" imgAlt="Ties" imgClass="img_title" text="CIRCLE OF CARE" :isParagraph="false" />
+    <CommonDivAtom className="title" image="/src/images/ties2.png" imgAlt="Ties" imgClass="img_title" text="CIRCLE OF CARE" :isParagraph="false" />
     <CircleContainerMolecule />
   </section>
 </template>
 <script lang="ts" setup>
-import { CircleContainerMolecule, DivAtom } from "../index"
+import { CircleContainerMolecule, CommonDivAtom } from "../index"
 </script>
 <style lang="scss" scoped>
 .title {

@@ -22,5 +22,6 @@ import { HeaderMessagesAtom, TableMailAtom } from "../index.ts"
     margin-left: 0;
     margin-right: 0;
   }
+  
 }
 </style>

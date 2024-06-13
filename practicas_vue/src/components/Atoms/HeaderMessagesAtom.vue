@@ -17,7 +17,27 @@
 </template>
 <script lang="ts" setup></script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
+.new_msg {
+  background-image: url("/src/images/Rectangle 2.png");
+  color: white;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+}
+.sent_msg {
+  background-color: lightgrey;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+}
+.previous_msg {
+  background-color: lightgrey;
+  padding-left: 10px;
+}
 .header_messages,
 .mail_menu {
   display: flex;
@@ -26,7 +46,7 @@
   align-items: center;
   gap: 30px;
   height: 45px;
-
+  
   .btn_check {
     margin-left: 9px;
     width: 0;
@@ -43,6 +63,7 @@
     padding: 10px 15px;
   }
 }
+
 
 form {
   display: flex;
